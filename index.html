@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Abel Yuri Josué Huamán Reyes: Python, desarrollo web y fundamentos de ciberseguridad.">
+  <meta name="theme-color" content="#07111f">
+  <title>Abel Huamán | Python · Web · Ciberseguridad</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Fondo decorativo -->
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="orb orb-one" aria-hidden="true"></div>
+  <div class="orb orb-two" aria-hidden="true"></div>
+  <div class="mouse-light" id="mouseLight" aria-hidden="true"></div>
+
+  <!-- Navegación -->
+  <header class="header" id="inicio">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="logo" href="#inicio" aria-label="Ir al inicio">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span>Abel.dev</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" type="button"
+        aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#terminal">Terminal</a>
+        <a href="#contacto" class="nav-cta">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-content reveal">
+        <div class="availability-badge">
+          <span class="status-dot"></span>
+          Buscando oportunidades para aportar, aprender y crecer
+        </div>
+
+        <p class="eyebrow">Hola, soy</p>
+        <h1>Abel Yuri Josué<br><span>Huamán Reyes</span></h1>
+
+        <p class="hero-role">
+          <span class="prompt">&gt;</span>
+          <span id="typewriter" aria-live="polite">Python</span>
+          <span class="cursor" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-description">
+          Estudiante de Ingeniería de Sistemas enfocado en
+          <strong>Python</strong>, <strong>desarrollo web</strong> y
+          <strong>fundamentos de ciberseguridad</strong>.
+          Estoy construyendo proyectos reales mientras sigo aprendiendo y mejorando cada día.
+        </p>
+
+        <div class="human-note">
+          <span class="human-note-label">MI OBJETIVO</span>
+          <p>
+            Busco una primera oportunidad donde pueda aportar con lo que ya sé,
+            aprender junto a un equipo y convertir cada reto en experiencia real.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#proyectos" class="button button-primary">
+            Ver mis proyectos
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="#contacto" class="button button-secondary">
+            Hablemos
+          </a>
+        </div>
+
+        <div class="quick-stack" aria-label="Tecnologías principales">
+          <span>Python</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Linux</span>
+          <span>Git</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Tarjeta de perfil técnico">
+        <div class="code-card tilt-card">
+          <div class="window-bar">
+            <div class="window-dots" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="window-title">profile.py</span>
+            <span></span>
+          </div>
+
+          <pre class="code"><code><span class="code-purple">class</span> <span class="code-yellow">Developer</span>:
+    <span class="code-purple">def</span> <span class="code-blue">__init__</span>(self):
+        self.name = <span class="code-green">"Abel Huamán"</span>
+        self.focus = [
+            <span class="code-green">"Python"</span>,
+            <span class="code-green">"Web"</span>,
+            <span class="code-green">"Cybersecurity"</span>
+        ]
+        self.learning = <span class="code-purple">True</span>
+
+    <span class="code-purple">def</span> <span class="code-blue">goal</span>(self):
+        <span class="code-purple">return</span> <span class="code-green">"Crecer creando"</span>
+
+me = Developer()
+<span class="code-muted"># Próximo proyecto: el tuyo 🚀</span></code></pre>
+
+          <div class="code-card-footer">
+            <span><span class="status-dot"></span> learning_mode: ON</span>
+            <span>Perú 🇵🇪</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <span>PYTHON</span><i>✦</i><span>HTML</span><i>✦</i><span>LINUX</span><i>✦</i>
+        <span>GIT</span><i>✦</i><span>CIBERSEGURIDAD</span><i>✦</i><span>APRENDER HACIENDO</span><i>✦</i>
+        <span>PYTHON</span><i>✦</i><span>HTML</span><i>✦</i><span>LINUX</span><i>✦</i>
+        <span>GIT</span><i>✦</i><span>CIBERSEGURIDAD</span><i>✦</i><span>APRENDER HACIENDO</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- SOBRE MÍ -->
+    <section class="section container" id="sobre-mi">
+      <div class="section-heading reveal">
+        <p class="section-kicker">01 / SOBRE MÍ</p>
+        <h2>No digo que lo sé todo.<br><span>Te muestro lo que ya sé hacer.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-card main-about reveal">
+          <p>
+            Soy estudiante de Ingeniería de Sistemas y actualmente estoy fortaleciendo mis
+            conocimientos en programación y seguridad informática.
+          </p>
+          <p>
+            Me gusta aprender construyendo: practico Python con ejercicios y pequeños programas,
+            desarrollo interfaces web y utilizo herramientas de ciberseguridad dentro de entornos
+            de laboratorio y aprendizaje autorizado.
+          </p>
+          <p>
+            Busco oportunidades donde pueda aportar con mis conocimientos actuales y,
+            al mismo tiempo, continuar desarrollándome profesionalmente.
+          </p>
+        </article>
+
+        <div class="stats-grid">
+          <article class="stat-card reveal">
+            <span class="stat-number">01</span>
+            <p>Repositorio principal de aprendizaje en Python</p>
+          </article>
+          <article class="stat-card reveal">
+            <span class="stat-number">03</span>
+            <p>Áreas en crecimiento: Python, Web y Ciberseguridad</p>
+          </article>
+          <article class="stat-card reveal">
+            <span class="stat-number">∞</span>
+            <p>Ganas de seguir aprendiendo y construyendo</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section container" id="habilidades">
+      <div class="section-heading reveal">
+        <p class="section-kicker">02 / HABILIDADES</p>
+        <h2>Mi stack actual</h2>
+        <p>Conocimientos que ya practico y que sigo reforzando.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <p>Fundamentos de programación y creación de programas sencillos.</p>
+          <div class="skill-tags">
+            <span>Variables</span>
+            <span>Condicionales</span>
+            <span>Bucles</span>
+            <span>Funciones</span>
+            <span>Input / Output</span>
+          </div>
+          <div class="skill-status">
+            <span class="status-pin"></span>
+            <span><strong>Practicando ahora:</strong> lógica, funciones y pequeños programas.</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">🌐</div>
+          <h3>Desarrollo web</h3>
+          <p>Creación y estructura de páginas web modernas y adaptables.</p>
+          <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Responsive</span>
+            <span>JavaScript básico</span>
+          </div>
+          <div class="skill-status">
+            <span class="status-pin"></span>
+            <span><strong>Practicando ahora:</strong> interfaces responsive e interacción con JavaScript.</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">🛡️</div>
+          <h3>Ciberseguridad</h3>
+          <p>Práctica básica en laboratorios, reconocimiento y análisis de red.</p>
+          <div class="skill-tags">
+            <span>Nmap</span>
+            <span>Wireshark</span>
+            <span>John</span>
+            <span>Hashcat</span>
+            <span>Gobuster</span>
+            <span>FFUF</span>
+            <span>tcpdump</span>
+          </div>
+          <div class="skill-status">
+            <span class="status-pin"></span>
+            <span><strong>En laboratorio:</strong> reconocimiento, tráfico de red y herramientas básicas.</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon">⚙️</div>
+          <h3>Herramientas</h3>
+          <p>Entorno que utilizo para aprender, desarrollar y organizar mis proyectos.</p>
+          <div class="skill-tags">
+            <span>Linux</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>VS Code</span>
+            <span>Terminal</span>
+          </div>
+          <div class="skill-status">
+            <span class="status-pin"></span>
+            <span><strong>Uso frecuente:</strong> terminal, GitHub, VS Code y entorno Linux.</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section container" id="proyectos">
+      <div class="section-heading reveal">
+        <p class="section-kicker">03 / PROYECTOS</p>
+        <h2>Aprendo construyendo</h2>
+        <p>No quiero llenar el portafolio con proyectos inventados. Estos representan lo que realmente practico.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card featured reveal">
+          <div class="project-top">
+            <span class="project-label">PROYECTO DESTACADO</span>
+            <span class="project-number">01</span>
+          </div>
+
+          <div>
+            <h3>Python desde cero</h3>
+            <p>
+              Repositorio donde documento mi aprendizaje de Python con fundamentos,
+              lógica condicional, bucles y retos prácticos.
+            </p>
+          </div>
+
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Git</span>
+            <span>GitHub</span>
+          </div>
+
+          <a class="project-link" href="https://github.com/YuriReyHU/python-desde-cero"
+             target="_blank" rel="noopener noreferrer">
+            Ver repositorio en GitHub <span>↗</span>
+          </a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-label">PRÁCTICA</span>
+            <span class="project-number">02</span>
+          </div>
+
+          <div>
+            <h3>Laboratorio de redes</h3>
+            <p>
+              Prácticas de reconocimiento y análisis de tráfico en entornos propios o autorizados
+              utilizando herramientas de seguridad.
+            </p>
+          </div>
+
+          <div class="project-tech">
+            <span>Nmap</span>
+            <span>Wireshark</span>
+            <span>Linux</span>
+          </div>
+
+          <span class="project-status">En aprendizaje continuo</span>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-label">ESTE PORTAFOLIO</span>
+            <span class="project-number">03</span>
+          </div>
+
+          <div>
+            <h3>Portafolio personal</h3>
+            <p>
+              Página interactiva creada con HTML, CSS y JavaScript para presentar mis
+              habilidades, proyectos y evolución profesional.
+            </p>
+          </div>
+
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <a class="project-link" href="#inicio">
+            Estás viéndolo ahora <span>↑</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section container" id="servicios">
+      <div class="section-heading reveal">
+        <p class="section-kicker">04 / EN QUÉ PUEDO AYUDAR</p>
+        <h2>Trabajo acorde a mi nivel actual</h2>
+      </div>
+
+      <div class="services-list">
+        <article class="service-row reveal">
+          <span class="service-number">01</span>
+          <div>
+            <h3>Scripts sencillos en Python</h3>
+            <p>Programas básicos, lógica, automatizaciones pequeñas y solución de ejercicios.</p>
+          </div>
+          <span class="service-arrow">↗</span>
+        </article>
+
+        <article class="service-row reveal">
+          <span class="service-number">02</span>
+          <div>
+            <h3>Páginas web sencillas</h3>
+            <p>Landing pages, portafolios y páginas informativas con diseño adaptable.</p>
+          </div>
+          <span class="service-arrow">↗</span>
+        </article>
+
+        <article class="service-row reveal">
+          <span class="service-number">03</span>
+          <div>
+            <h3>Apoyo técnico y laboratorios</h3>
+            <p>Uso básico de Linux y herramientas de ciberseguridad únicamente en entornos autorizados.</p>
+          </div>
+          <span class="service-arrow">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- AHORA MISMO -->
+    <section class="section container now-section" id="ahora">
+      <div class="now-card reveal">
+        <div class="now-stamp">
+          <span>AHORA</span>
+          <small>EN CONSTRUCCIÓN</small>
+        </div>
+
+        <div class="now-copy">
+          <p class="section-kicker">UN POCO MÁS PERSONAL</p>
+          <h2>Este portafolio también es parte de mi aprendizaje.</h2>
+          <p>
+            No lo veo como una página terminada para siempre. A medida que aprenda nuevas cosas,
+            voy a mejorar el código, añadir proyectos y reemplazar las prácticas por experiencia real.
+          </p>
+        </div>
+
+        <div class="now-list">
+          <div><span>01</span><p>Mejorar Python con proyectos más completos.</p></div>
+          <div><span>02</span><p>Seguir aprendiendo desarrollo web y JavaScript.</p></div>
+          <div><span>03</span><p>Practicar ciberseguridad solo en laboratorios autorizados.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERMINAL INTERACTIVA -->
+    <section class="section container" id="terminal">
+      <div class="section-heading reveal">
+        <p class="section-kicker">05 / MODO TERMINAL</p>
+        <h2>¿Quieres conocerme de otra forma?</h2>
+        <p>Escribe <code>help</code> y prueba los comandos.</p>
+      </div>
+
+      <div class="terminal-window reveal">
+        <div class="terminal-bar">
+          <div class="window-dots" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <span>abel@portfolio:~</span>
+          <button id="clearTerminal" type="button">Limpiar</button>
+        </div>
+
+        <div class="terminal-body" id="terminalOutput" aria-live="polite">
+          <div><span class="terminal-green">abel@portfolio</span>:<span class="terminal-blue">~</span>$ welcome</div>
+          <div class="terminal-response">Hola 👋 Escribe <strong>help</strong> para ver los comandos disponibles.</div>
+        </div>
+
+        <form class="terminal-form" id="terminalForm">
+          <label class="sr-only" for="terminalInput">Comando</label>
+          <span><span class="terminal-green">abel@portfolio</span>:<span class="terminal-blue">~</span>$</span>
+          <input id="terminalInput" type="text" autocomplete="off" spellcheck="false"
+                 placeholder="help" maxlength="40">
+        </form>
+
+        <div class="terminal-suggestions" aria-label="Comandos sugeridos">
+          <button type="button" data-command="whoami">whoami</button>
+          <button type="button" data-command="skills">skills</button>
+          <button type="button" data-command="projects">projects</button>
+          <button type="button" data-command="contact">contact</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact-section container" id="contacto">
+      <div class="contact-panel reveal">
+        <div>
+          <p class="section-kicker">06 / CONTACTO</p>
+          <h2>Si crees que puedo aportar, conversemos.</h2>
+          <p>
+            Busco oportunidades acordes a mi nivel actual: trabajos pequeños, prácticas,
+            colaboraciones o un equipo donde pueda aprender mientras aporto con responsabilidad.
+          </p>
+
+          <div class="contact-direct">
+            <a href="mailto:abelhuarey@gmail.com">
+              <span>EMAIL</span>
+              <strong>abelhuarey@gmail.com</strong>
+            </a>
+            <a href="https://wa.me/51940253586?text=Hola%20Abel%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20contigo."
+               target="_blank" rel="noopener noreferrer">
+              <span>WHATSAPP</span>
+              <strong>+51 940 253 586</strong>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button button-primary"
+             href="mailto:abelhuarey@gmail.com?subject=Contacto%20desde%20tu%20portafolio">
+            Escribirme por correo ↗
+          </a>
+          <a class="button button-whatsapp"
+             href="https://wa.me/51940253586?text=Hola%20Abel%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20contigo."
+             target="_blank" rel="noopener noreferrer">
+            Hablar por WhatsApp ↗
+          </a>
+          <a class="button button-secondary" href="https://github.com/YuriReyHU"
+             target="_blank" rel="noopener noreferrer">
+            Ver mi GitHub ↗
+          </a>
+        </div>
+
+        <p class="contact-footnote">
+          Respondo personalmente. No hay formularios automáticos ni mensajes de plantilla.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>Diseñado y construido por <strong>Abel Huamán</strong>.</p>
+    <p><span id="currentYear"></span> · Sigo aprendiendo, sigo construyendo.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
