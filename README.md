@@ -1,8 +1,8 @@
-# Portafolio de Abel Huamán — versión 2
+# Portafolio Abel Huamán 
 
 Portafolio personal interactivo construido con **HTML, CSS y JavaScript**.
 
-## Qué incluye
+## Incluye
 
 - Diseño responsive para PC y celular.
 - Efecto de escritura automática.
@@ -23,15 +23,6 @@ Portafolio personal interactivo construido con **HTML, CSS y JavaScript**.
 - GitHub: `https://github.com/YuriReyHU`
 - LinkedIn: no incluido
 
-## Cómo abrirlo
-
-Abre `index.html` directamente en Chrome o Edge.
-
-Para editarlo cómodamente:
-1. Abre la carpeta en Visual Studio Code.
-2. Modifica `index.html`, `styles.css` o `script.js`.
-3. Puedes usar Live Server, aunque no es obligatorio.
-
 ## Terminal
 
 Prueba:
@@ -47,4 +38,4 @@ Prueba:
 
 ## Idea del diseño
 
-La intención es que se vea personal y profesional, no como una plantilla genérica. Por eso no se usan porcentajes inventados de dominio: las habilidades explican qué estás practicando realmente.
+
