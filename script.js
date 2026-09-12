@@ -3,10 +3,7 @@
    script.js
    ================================ */
 
-/*
-  EDITA SOLO ESTA PARTE CON TUS DATOS REALES.
-  GitHub ya está configurado.
-*/
+
 const CONFIG = {
   email: "abelhuarey@gmail.com",
   linkedin: "",
